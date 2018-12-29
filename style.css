@@ -1,0 +1,77 @@
+body{
+    background: linear-gradient( to right, #370A00 , #721703);
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container{
+    height: 495px;
+    width: 400px;
+    background-color: aliceblue;
+    border: 10px solid brown;
+    margin-left: 37.5%;
+    margin-top: 3%;
+    border-radius: 20px;
+}
+
+.head{
+    background-color: brown;
+    border-top-right-radius : 8px;
+    border-top-left-radius : 8px;
+    padding: 10px;
+}
+
+.head h2{
+    margin: 0;
+    margin-left: 32%;
+    color: aliceblue;
+    font-weight: bolder
+}
+
+
+.cal_keys{
+    display: grid;
+    grid-gap: 1px;
+    grid-template-columns: repeat(4, 1fr);
+    height: 377.2px;
+}
+
+
+.cal_display{
+    background-color: black;
+    display: block;
+    height: 70px;
+    color: white;
+    text-align: right;
+    font-size: 50px;
+}
+
+.key-equal{
+    background-image: linear-gradient(to bottom, #fe886a, #ff7033);
+    grid-column: -2;
+    grid-row: 2 / span 4;
+}
+
+.cal_keys > * {
+    background-color: #fff;
+    padding: 0.5em 1em;
+    position: relative;
+    text-align: center;
+    border: 0;
+    font-size: 25px;
+}
+
+.isdepressed{
+    background-color: darkslategrey
+}
+
+.key-equal{
+    border-bottom-right-radius: 10px;
+}
+
+.zero{
+    border-bottom-left-radius: 10px;
+}
+
+.cal_keys:focus{
+    outline: 0;
+}
